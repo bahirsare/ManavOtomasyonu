@@ -52,7 +52,7 @@ namespace ManavOtomasyonu
             {
                 Console.WriteLine("Kaç Kilo İstiyorsunuz?");
                 double.TryParse(Console.ReadLine(), out volume);
-                if (volume == 0)
+                if (volume <= 0)
                 {
                     Console.WriteLine("Geçersiz Değer!!");
                     Thread.Sleep(1000);
