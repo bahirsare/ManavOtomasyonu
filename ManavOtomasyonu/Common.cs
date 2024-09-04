@@ -41,7 +41,7 @@ namespace ManavOtomasyonu
             ListingProducts(collection);
             Console.WriteLine("Hangi Ürünü İstiyorsunuz?");
             int.TryParse(Console.ReadLine(), out choice);
-            if (choice > collection.Count || choice == 0)
+            if (choice > collection.Count || choice <= 0)
             {
                 Console.WriteLine("Geçersiz Değer Girdiniz.");
                 Thread.Sleep(1000);
@@ -78,7 +78,6 @@ namespace ManavOtomasyonu
                 stock.Add(volume);
             }
         }
-
         static internal void SubMenu(ArrayList collection, ref ArrayList stock, ref ArrayList greenGroceryStock, bool isgreenGrocery)
         {
             if (isgreenGrocery)
@@ -87,12 +86,9 @@ namespace ManavOtomasyonu
             }
             else
             {
-
                 AddingStock(collection, ref stock);
             }
-
         }
-
     }
 }
 

@@ -11,7 +11,6 @@ namespace ManavOtomasyonu
             ArrayList fruitStockClient = new ArrayList();
             ArrayList vegetableStockClient = new ArrayList();
             MainMenu(ref fruitStockGrocery, ref vegetableStockGrocery, ref fruitStockClient, ref vegetableStockClient, "hal");
-
         }
         static internal void MainMenu(ref ArrayList fruitStockGrocery, ref ArrayList vegetableStockGrocery, ref ArrayList fruitStockClient, ref ArrayList vegetableStockClient, string type)
         {
